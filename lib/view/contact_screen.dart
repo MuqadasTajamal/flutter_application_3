@@ -16,7 +16,12 @@ class ContactScreen extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 60, left: 30, right: 50),
+              padding: const EdgeInsets.only(
+                top: 60,
+                left: 30,
+                right: 50,
+                bottom: 60,
+              ),
               child: Row(
                 children: [
                   CustomContainer(height: 100, width: 900),
@@ -156,7 +161,9 @@ class ContactScreen extends StatelessWidget {
                                     ),
                                   ),
                                 ),
+
                                 SizedBox(height: 30),
+
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   children: [
@@ -217,76 +224,74 @@ class ContactScreen extends StatelessWidget {
               ),
             ),
 
-            // if (screenWidth > 1101)
-            Row(
-              // crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    color: Color(0xff),
-                    border: Border.all(color: Color(0xff)),
-                  ),
-                  height: 500,
-                  width: 700,
+            // Row(
+            //   children: [
+            //     Container(
+            //       decoration: BoxDecoration(
+            //         color: Color.fromARGB(0, 201, 201, 204),
+            //         border: Border.all(color: Color.fromARGB(0, 144, 144, 151)),
+            //       ),
+            //       height: 500,
+            //       width: 700,
 
-                  // margin:d EdgeInsets.all(30),
-                  // padding: EdgeInsets.all(30),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+            //       // margin:d EdgeInsets.all(30),
+            //       // padding: EdgeInsets.all(30),
+            //       child: Row(
+            //         crossAxisAlignment: CrossAxisAlignment.start,
 
-                    children: [
-                      if (screenWidth > 110)
-                        Container(
-                          height: 120,
-                          width: 120,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(30),
-                            color: Color.fromARGB(255, 18, 18, 20),
-                          ),
-                          child: Image.network(
-                            "https://codewithsadee.github.io/vcard-personal-portfolio/assets/images/my-avatar.png",
-                          ),
-                        ),
-                      SizedBox(width: 25),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Richard hanrick",
-                            style: TextStyle(
-                              fontFamily: "PoppinsR",
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                              fontSize: 25,
-                              letterSpacing: 1,
-                            ),
-                          ),
-                          SizedBox(height: 20),
-                          Container(
-                            height: 25,
-                            width: 120,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(8),
-                              color: Color(0xff2B2B2C),
-                            ),
+            //         children: [
+            //           if (screenWidth > 1105)
+            //             Container(
+            //               height: 120,
+            //               width: 120,
+            //               decoration: BoxDecoration(
+            //                 borderRadius: BorderRadius.circular(30),
+            //                 color: Color.fromARGB(255, 18, 18, 20),
+            //               ),
+            //               child: Image.network(
+            //                 "https://codewithsadee.github.io/vcard-personal-portfolio/assets/images/my-avatar.png",
+            //               ),
+            //             ),
+            //           SizedBox(width: 25),
+            //           Column(
+            //             crossAxisAlignment: CrossAxisAlignment.start,
+            //             children: [
+            //               Text(
+            //                 "Richard hanrick",
+            //                 style: TextStyle(
+            //                   fontFamily: "PoppinsR",
+            //                   fontWeight: FontWeight.bold,
+            //                   color: Colors.white,
+            //                   fontSize: 25,
+            //                   letterSpacing: 1,
+            //                 ),
+            //               ),
+            //               SizedBox(height: 20),
+            //               Container(
+            //                 height: 25,
+            //                 width: 120,
+            //                 decoration: BoxDecoration(
+            //                   borderRadius: BorderRadius.circular(8),
+            //                   color: Color(0xff2B2B2C),
+            //                 ),
 
-                            child: Center(
-                              child: Text(
-                                "Web developer",
-                                style: TextStyle(
-                                  color: Color(0xffD5D5D6),
-                                  fontSize: 12,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
+            //                 child: Center(
+            //                   child: Text(
+            //                     "Web developer",
+            //                     style: TextStyle(
+            //                       color: Color(0xffD5D5D6),
+            //                       fontSize: 12,
+            //                     ),
+            //                   ),
+            //                 ),
+            //               ),
+            //             ],
+            //           ),
+            //         ],
+            //       ),
+            //     ),
+            //   ],
+            // ),
           ],
         ),
       ),

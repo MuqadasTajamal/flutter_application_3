@@ -18,7 +18,12 @@ class AboutScreen extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 20, right: 20, top: 30),
+              padding: const EdgeInsets.only(
+                left: 20,
+                right: 20,
+                top: 30,
+                bottom: 40,
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,7 +34,7 @@ class AboutScreen extends StatelessWidget {
                   Column(
                     children: [
                       Container(
-                        height: 1400,
+                        height: 1300,
                         width: 890,
                         decoration: BoxDecoration(
                           color: Color(0xff202021),
